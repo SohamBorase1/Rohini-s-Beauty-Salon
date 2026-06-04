@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohini's Beauty Salon</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+<nav>
+<div class="logo-text">Rohini's Beauty Salon</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<img src="images/logo.png" class="logo">
+
+<h1>Rohini's Beauty Salon</h1>
+
+<p>Luxury Beauty • Hair Care • Makeup</p>
+
+<div class="hero-buttons">
+
+<a href="tel:+91XXXXXXXXXX" class="btn">
+Call Now
+</a>
+
+<a href="https://wa.me/91XXXXXXXXXX"
+class="btn whatsapp-btn">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Services -->
+
+<section id="services">
+
+<h2>Our Premium Services</h2>
+
+<div class="service-grid">
+
+<div class="service-card"
+onclick="openService('facial')">
+✨
+<h3>Facial</h3>
+</div>
+
+<div class="service-card"
+onclick="openService('hair')">
+💇
+<h3>Hair Services</h3>
+</div>
+
+<div class="service-card"
+onclick="openService('makeup')">
+💄
+<h3>Makeup</h3>
+</div>
+
+<div class="service-card"
+onclick="openService('threading')">
+🧵
+<h3>Threading</h3>
+</div>
+
+<div class="service-card"
+onclick="openService('waxing')">
+🕯
+<h3>Waxing</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/salon1.jpg">
+<img src="images/salon2.jpg">
+<img src="images/salon3.jpg">
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-card">
+
+    <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        +91 9420939583
+       </div>
+
+    <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        shop no. 12, khadki, rangehills, pune-20, maharastra
+    </div>
+
+</div>
+
+</section>
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close"
+onclick="closeService()">&times;</span>
+
+<div id="popupBody"></div>
+
+</div>
+
+</div>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/919420939583"
+class="floating-whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
